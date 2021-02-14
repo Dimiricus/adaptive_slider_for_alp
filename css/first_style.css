@@ -1,0 +1,411 @@
+.slider_content {
+	width: 100%;
+	height: 90vh;
+	text-align: center;
+	position: relative;
+}
+
+.bypro_slider_wrapper {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	position: absolute;
+	height: 60%;
+	margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.slide_one, .slide_two, .slide_three {
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+	background-size: cover;
+}
+
+.slide_one {
+	background-position: 35% center;
+	background-size: 1100px;
+    background-repeat: no-repeat;
+	filter: brightness(60%);
+}
+
+	
+.slide_two {
+	background-position: bottom;
+	background-size: 1200px auto;
+    background-repeat: no-repeat;
+	filter: brightness(60%);
+}
+	
+.slide_three {
+	background-position: center;
+    background-position-y: 89%;
+    background-size: 1060px;
+    background-repeat: no-repeat;
+    filter: brightness(60%);
+}
+
+.one_wrap, .two_wrap, .three_wrap {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	
+	background-color: gray;
+	position: relative;	
+	
+	background-size: cover;
+}
+.one_wrap {
+	z-index: 10;
+	clip-path: polygon(calc(0% + 150px) 0%, 0% 100%, calc(100% - 150px) 100%, 100% 0%);
+	left: 7.7%;
+	background-position: center;
+	transition: .5s ease-in-out;
+}
+.two_wrap {
+	z-index: 20;
+	clip-path: polygon(calc(0% + 150px) 0%, 0% 100%, calc(100% - 150px) 100%, 100% 0%);
+	background-position: center;
+	transition: .5s ease-in-out;
+}
+.three_wrap {
+	z-index: 30;
+	clip-path: polygon(calc(0% + 150px) 0%, 0% 100%, calc(100% - 150px) 100%, 100% 0%);
+	right: 7.7%;
+	background-position: center;
+	background-position-y: 60%;
+	transition: .5s ease-in-out;
+}
+
+/*--- Затемнения для картинок ---*/
+.slide_one_hover:hover {
+	filter: brightness(100%);
+}
+.slide_two_hover:hover {
+	filter: brightness(100%);
+}
+.slide_three_hover:hover {
+	filter: brightness(100%);
+}
+/*-------- end Затемнение -------*/
+
+
+/*--- Уменьшение ширины ---*/
+.slide_width_down {
+	width: 22%;
+}
+/*---- end уменьшение -----*/
+
+
+/*--- Увеличение ширины ---*/
+.slide_width_up {
+	width: 55%;
+}
+/*---- end Увеличение -----*/ 
+
+
+/*--- Заголовки ---*/
+.one_wrap h3 {
+	text-transform: uppercase;
+    color: white;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: max-content;
+    
+    transition: .5s ease-in-out;
+}
+.one_wrap h3 p {
+	font-size: 30px;
+    margin: 0;
+    line-height: 1.5;
+    padding-right: 15px;
+}
+
+
+								.two_wrap h3 {
+									text-transform: uppercase;
+								    color: white;
+								    z-index: 100;
+								    width: 100%;
+								    text-align: center;
+								    position: absolute;
+								    margin: auto;
+								    top: 0;
+								    bottom: 0;
+								    height: max-content;
+								    
+								    transition: .5s ease-in-out;
+								}
+								.two_wrap h3 p {
+									font-size: 30px;
+								    margin: 0;
+								    line-height: 1.5;
+								}
+								
+
+																	.three_wrap h3 {
+																		text-transform: uppercase;
+																	    color: white;
+																	    z-index: 100;
+																	    width: 100%;
+																	    text-align: center;
+																	    position: absolute;
+																	    margin: auto;
+																	    top: 0;
+																	    bottom: 0;
+																	    height: max-content;
+																	    
+																	    transition: .5s ease-in-out;
+																	}
+																	.three_wrap h3 p {
+																		font-size: 30px;
+																	    margin: 0;
+																	    line-height: 1.5;
+																	}
+
+
+.one_ul, .two_ul, .three_ul {
+	width: max-content;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30%;
+	bottom: 0;
+    font-size: 26px;
+    color: white;
+    z-index: 100;
+    line-height: 1.5;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+/* --- one --- */
+.one_ul {
+	left: -10%;
+}
+.one_show {
+	left: -4%;
+	opacity: 1;
+}
+
+/* --- two ---*/
+.two_ul {
+	top: 36%;
+}
+.two_show {
+	top: 30%;
+	opacity: 1;
+}
+
+/* --- three --- */
+.three_ul {
+    right: -10%;
+}
+.three_show {
+	right: 4%;
+	opacity: 1;
+}
+
+
+.ul_show {
+	left: 20%;
+	opacity: 1;
+}
+.title_up {
+	bottom: 350px !important;
+}
+/*- end Заголовки -*/
+
+
+/*--- Заголовки уходят вверх влево ---*/
+.one_subtitle {
+	position: absolute;
+    top: -5%;
+    right: 5%;
+    color: white;
+    z-index: 10;
+    opacity: 0;
+    
+    transition: .5s ease-in-out;
+}
+.title_top_left {
+	opacity: 1;
+	top: 0;
+}
+.main_title{
+	opacity: 0;
+	top: -10% !important;
+}
+
+
+/*--- Списки ---*/
+.two_ul .left_ul, .two_ul .right_ul {
+	margin: 0 15px 0 15px;
+}
+.two_ul .left_ul {
+	float: left;
+}
+.two_ul .right_ul {
+	float: left;
+}
+/*- end Списки -*/
+
+
+/* --- BR --- */
+h3 .media_br, .one_subtitle .media_br {
+	display: none;
+}
+
+
+/* --- MEDIA --- */
+@media screen and (max-width: 1800px) {
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 24px;
+	}
+	.one_wrap {
+		left: 8.4%;
+	}
+	.three_wrap {
+		right: 8.4%;
+	}
+}
+
+@media screen and (max-width: 1700px) {
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 22px;
+	}
+	.one_wrap {
+		left: 8.6%;
+	}
+	.three_wrap {
+		right: 8.6%;
+	}
+
+	.one_subtitle {
+		font-size: 13px;
+	}
+	.one_ul, .two_ul, .three_ul {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 24px;
+	}
+	.one_wrap {
+		left: 10%;
+	}
+	.three_wrap {
+		right: 10%;
+	}
+
+	.one_subtitle {
+		font-size: 13px;
+	}
+	.one_ul, .two_ul, .three_ul {
+		font-size: 22px;
+	}
+
+	h3 .media_br, .one_subtitle .media_br {
+		display: inline;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.one_wrap {
+		left: 11%;
+	}
+	.three_wrap {
+		right: 11%;
+	}
+}
+@media screen and (max-width: 1300px) {
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 21px;
+	}
+	.one_wrap {
+		left: 11.8%;
+	}
+	.three_wrap {
+		right: 11.8%;
+	}
+
+	.one_subtitle {
+		font-size: 11px;
+	}
+	.one_ul, .two_ul, .three_ul {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1150px) {
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 19px;
+	}
+	.one_wrap {
+		left: 12.4%;
+	}
+	.three_wrap {
+		right: 12.4%;
+	}
+
+	.one_subtitle {
+		display: none;
+	}
+	.one_ul, .two_ul, .three_ul {
+		font-size: 18px;
+	}
+	.slide_width_down {
+		width: 16%;
+	}	
+	.two_ul .left_ul, .two_ul .right_ul {
+		margin: 0 5px 0 5px;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.one_wrap {
+		left: 14%;
+	}
+	.three_wrap {
+		right: 14%;
+	}
+}
+@media screen and (max-width: 1060px) {
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 16px;
+	}
+	.one_ul, .two_ul, .three_ul {
+		font-size: 16px;
+	}
+	.one_wrap {
+		left: 14%;
+	}
+	.three_wrap {
+		right: 14%;
+	}
+}
+@media screen and (max-width: 991px) {
+	.one_wrap, .two_wrap, .three_wrap {
+		clip-path: polygon(calc(0% + 50px) 0%, 0% 100%, calc(100% - 50px) 100%, 100% 0%);
+	}
+	.one_wrap h3 p, .two_wrap h3 p, .three_wrap h3 p {
+		font-size: 16px;
+	}
+	.one_ul, .two_ul, .three_ul {
+		font-size: 16px;
+	}
+	.one_wrap {
+		left: 6%;
+	}
+	.three_wrap {
+		right: 6%;
+	}
+}
